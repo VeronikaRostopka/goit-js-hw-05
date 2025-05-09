@@ -1,7 +1,7 @@
 // Задача 3. Сортування за кількістю друзів
 
 const sortByDescendingFriendCount = users => 
-  [...users].sort((firstUser, secondUser) => secondUser.friends.length - firstUser.friends.length);
+  users.toSorted((firstUser, secondUser) => secondUser.friends.length - firstUser.friends.length);
 
 console.log(
   sortByDescendingFriendCount([
