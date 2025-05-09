@@ -74,6 +74,17 @@
       // Оновлюємо інформацію на сторінці
       document.getElementById('taskOutput').innerHTML = `<p>Виконується завдання ${taskNum}. Відкрийте консоль (F12), щоб побачити результати.</p>`;
     }
+    
+    // Автоматично запускаємо перше завдання при завантаженні сторінки
+    window.onload = function() {
+      activateTask(1);
+    };
   </script>
+  
+  <!-- Підключення всіх скриптів статично -->
+  <script src="./js/task-1.js"></script>
+  <script src="./js/task-2.js"></script>
+  <script src="./js/task-3.js"></script>
+  <script src="./js/task-4.js"></script>
 </body>
 </html>
